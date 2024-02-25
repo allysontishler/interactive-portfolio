@@ -9,8 +9,20 @@ title: 11ty Boilerplate
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title }}</title>
   <link rel="stylesheet" href="/styles/screen.css">
-</head>
-<body>
-  {{ content }}
-</body>
+
+  <body>
+    <div class="container">
+      <div class="slides slide1">
+        <div class="nav-bar-container">
+          <div class="home-nav">
+            <a href="index.html" class="far-left nav-link">Allyson Tishler</a>
+          </div>
+          <div class="top-nav">
+            <a href="about.html" class="left-link nav-link"><b>about</b></a>
+            <a href="work.html" class="center-link nav-link"><b>work</b></a>
+            <a href="https://drive.google.com/file/d/14sLFF7O-Hz3Bu60RD8h-8-tfBEtePntb/view?usp=sharing" class="right-link nav-link"><b>resume</b></a>
+          </div>
+        </div>
+        {{ content }}
+  </body>
 </html>
